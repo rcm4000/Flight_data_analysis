@@ -1,0 +1,173 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red63\green127\blue95;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c24706\c49804\c37255;\csgray\c0;}
+\margl1440\margr1440\vieww10380\viewh7880\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 CS644 - \ul Intro\ulnone  To Big data\cf0 \
+\cf2 Final Project\cf0 \
+\cf2 Team:  \ul Ami\ulnone  \ul Patel\ulnone  and \ul Rayon\ulnone  \ul Myrie
+\f1\fs22 \cf3 \ulnone \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+Login Into Hadoop Database:\
+ssh -i rcmkey2.pem ec2-user@ec2-34-212-28-206.us-west-2.compute.amazonaws.com\
+\
+\
+\
+Create folder for files hadoop folder\
+\
+mkdir cs644\
+mkdir airline\
+Cd airline\
+mkdir input\
+\
+Copy files to Airline/input\
+\
+scp ~/Downloads/2008.csv  NameNode:~/hadoop/cs644/airline/input/2008.csv\
+\
+\
+\
+\
+\
+Copy Java code to Airline folder\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Setup and Testing Logic to Find Airlines that are always on time\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+scp ~/Downloads/AirlinesOnTime.java  NameNode:~/hadoop/cs644/airline/Ontime/AirlinesOnTime.java\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Compile AirlinesonTime Jar\
+javac AirlinesOnTime.java -cp $(hadoop classpath)\
+\
+Create Jar File:\
+jar cf AirlinesOnTime.jar AirlinesOnTime*.class \
+\
+Run Test:\
+~/hadoop/bin/hadoop jar Ontime/AirlinesOnTime.jar AirlinesOnTime input  output/Ontime/2008\
+\
+Results: 2008.csv\
+EV      Probability = 0.2833587548291564  , ontime 25451.0 / Total 89819\
+F9      Probability = 0.3315553519421447  , ontime 10132.0 / Total 30559\
+FL      Probability = 0.3106361133149764  , ontime 26624.0 / Total 85708\
+HA      Probability = 0.5118825977439492  , ontime 9348.0 / Total 18262\
+MQ      Probability = 0.2730107431860932  , ontime 43252.0 / Total 158426\
+NW      Probability = 0.2843795909608623  , ontime 34456.0 / Total 121162\
+OH      Probability = 0.32086272695732626  , ontime 22196.0 / Total 69176\
+OO      Probability = 0.2866797575525365  , ontime 53872.0 / Total 187917\
+UA      Probability = 0.25380138914961514  , ontime 37856.0 / Total 149156\
+US      Probability = 0.23178320774598882  , ontime 34974.0 / Total 150891\
+WN      Probability = 0.3916090132374305  , ontime 154189.0 / Total 393732\
+XE      Probability = 0.26335872184701437  , ontime 35407.0 / Total 134444\
+YV      Probability = 0.2988937695207994  , ontime 24020.0 / Total 80363\
+\
+The 3 Airlines with the Highest Probability of being on time are:\
+HA      0.5118825977439492\
+AQ      0.47845717234262125\
+WN      0.3916090132374305\
+\
+The 3 Airlines with the Lowest Probability of being on time are:\
+B6      0.19160603184646208\
+US      0.23178320774598882\
+AS      0.23207165204588676\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\
+Setup and testing Airports that have shortest and longest Taxi Time\
+\'97\'97\'97\'97\'97\'97\'97\
+\
+scp ~/Downloads/AirlinesOnTime.java  NameNode:~/hadoop/cs644/airline/TaxiTime/AirportTaxiTime.java\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Compile AirlinesonTime Jar\
+javac AirportTaxiTime.java -cp $(hadoop classpath)\
+\
+Create Jar File:\
+jar cf AirportTaxiTime.jar AirportTaxiTime*.class \
+\
+Run Test:\
+~/hadoop/bin/hadoop jar TaxiTime/AirportTaxiTime.jar AirportTaxiTime input  output/TaxiTime\
+\
+\
+Results: 2008.csv\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \CocoaLigature1 Longest Taxi Time	\
+JFK	20.874649905135584\
+LGA	18.619557123260826\
+EWR	18.39929031158092\
+\
+Shortest Taxi Time	\
+AKN	3.75\
+BRW	4.59447983014862\
+OME	4.7648809523809526\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf3 \CocoaLigature0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\
+Setup and testing Cancelation Reason\
+\'97\'97\'97\'97\'97\'97\'97\
+\
+scp ~/Downloads/CancellationReasonV2.java  NameNode:~/hadoop/cs644/airline/Reason/CancellationReasonV2.java  \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Compile CancellationReason Jar\
+javac CancellationReasonV2.java -cp $(hadoop classpath)\
+\
+Create Jar File:\
+jar cf CancellationReason.jar CancellationReason*.class \
+\
+Run Test:\
+~/hadoop/bin/hadoop jar Reason/CancellationReasonV2.jar CancellationReasonV2 input  output/Reason\
+\
+Results: 2008.csv\
+\
+NAS	12617\
+carrier	26075\
+security	6\
+weather	25744\
+  \
+  \
+A most reason to cancel a flight is:  \
+carrier	26075\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\
+\
+Save Jar files as backup on local machine:\
+scp NameNode:~/hadoop/cs644/airline/Reason/*.jar  ~/Downloads/\
+scp NameNode:~/hadoop/cs644/airline/OnTime/*.jar  ~/Downloads/\
+scp NameNode:~/hadoop/cs644/airline/TaxiTime/*.jar  ~/Downloads/\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Running Process\
+\'97\'97\'97\'97\
+\
+Check files are in HDFS - \
+\
+hadoop fs -ls /user/hadoop/airline/input \
+\
+\
+\
+Save locations\
+Output Locations\
+/user/hadoop/airline/output/2output/taxitime\
+/user/hadoop/airline/output/2output/ontime\
+/user/hadoop/airline/output/2output/canreason\
+\
+Input locations\
+/user/hadoop/airline/input/1988.csv\
+\
+\
+}
