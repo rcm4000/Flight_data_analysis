@@ -1,0 +1,1059 @@
+Outputs
+Running all 22 files on a  3 to 23 VM machine
+-------------------------------------
+# of VM	DataNodes	Run Time	Run Time in secs
+3	               2	            16m 31s	   991
+5	               4	              8m 29s	   509
+7	               6	              5m 34s	   334
+11	             10	              3m 23s	   203
+15	             14	              2m 24	   144
+19	             18	               1m 46s	   106
+23                 22.                     1m 25s.       85
+
+
+I Reduced the VMs to 5 because I got a large bill from AWS
+
+1987-2008 (22 files)- Total time = 
+------
+OnTime
+E	Probability = 0.3145639377425852  , ontime 105115.0 / Total 334161
+AA	Probability = 0.41127437095453373  , ontime 5865957.0 / Total 14262880
+AQ	Probability = 0.5426415941177636  , ontime 82214.0 / Total 151507
+AS	Probability = 0.44460662854663985  , ontime 1205289.0 / Total 2710911
+B6	Probability = 0.24330842431658609  , ontime 163840.0 / Total 673384
+CO	Probability = 0.4000224135160666  , ontime 3126860.0 / Total 7816712
+DH	Probability = 0.24970769926846423  , ontime 167226.0 / Total 669687
+DL	Probability = 0.4636690150919373  , ontime 7402882.0 / Total 15965876
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.30921786657260564  , ontime 451472.0 / Total 1460045
+F9	Probability = 0.3321124225511727  , ontime 89676.0 / Total 270017
+FL	Probability = 0.29934656432945494  , ontime 322190.0 / Total 1076311
+HA	Probability = 0.5277087891296122  , ontime 121325.0 / Total 229909
+HP	Probability = 0.5101229204780107  , ontime 1823894.0 / Total 3575401
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.3053402271651408  , ontime 1061704.0 / Total 3477118
+NW	Probability = 0.3979932120266074  , ontime 3912169.0 / Total 9829738
+OH	Probability = 0.3652991139570525  , ontime 472186.0 / Total 1292601
+OO	Probability = 0.41788651692122036  , ontime 1109505.0 / Total 2655039
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.26900542214584944  , ontime 55417.0 / Total 206007
+UA	Probability = 0.40995402011703613  , ontime 5202007.0 / Total 12689245
+US	Probability = 0.4387231362816471  , ontime 5904325.0 / Total 13457975
+WN	Probability = 0.5727299325699874  , ontime 8591457.0 / Total 15000887
+XE	Probability = 0.293051485550992  , ontime 604123.0 / Total 2061491
+YV	Probability = 0.32035886251714774  , ontime 210643.0 / Total 657522
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+ML (1)	0.6203214745583704
+EA	0.574632073903065
+WN	0.5727299325699874
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+B6	0.24330842431658609
+DH	0.24970769926846423
+TZ	0.26900542214584944
+
+
+
+
+TaxiTime
+Longest Taxi Time	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	23.69220480047559
+Shortest Taxi Time	
+SKA	0.0
+RCA	0.0
+LBF	0.0
+
+
+Reason
+A most reason to cancel a flight is:  
+carrier	289613
+
+
+
+1987-2007 (21 files)
+------
+OnTime
+9E	Probability = 0.3309018090540638  , ontime 82787.0 / Total 250186
+AA	Probability = 0.41314333159485384  , ontime 5812830.0 / Total 14069766
+AQ	Probability = 0.5461027442523738  , ontime 78505.0 / Total 143755
+AS	Probability = 0.44851104880225756  , ontime 1193940.0 / Total 2662008
+B6	Probability = 0.2489625257206307  , ontime 151121.0 / Total 607003
+CO	Probability = 0.4014518909006732  , ontime 3097329.0 / Total 7715318
+DH	Probability = 0.24970769926846423  , ontime 167226.0 / Total 669687
+DL	Probability = 0.46491797988973116  , ontime 7354021.0 / Total 15817889
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.3109129442880226  , ontime 426021.0 / Total 1370226
+F9	Probability = 0.3321835144367697  , ontime 79544.0 / Total 239458
+FL	Probability = 0.2983697808304639  , ontime 295566.0 / Total 990603
+HA	Probability = 0.5290743549400653  , ontime 111977.0 / Total 211647
+HP	Probability = 0.5101229204780107  , ontime 1823894.0 / Total 3575401
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.3068835553284246  , ontime 1018452.0 / Total 3318692
+NW	Probability = 0.39941109798182556  , ontime 3877713.0 / Total 9708576
+OH	Probability = 0.3678116762367942  , ontime 449990.0 / Total 1223425
+OO	Probability = 0.4278803399264406  , ontime 1055633.0 / Total 2467122
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.26900542214584944  , ontime 55417.0 / Total 206007
+UA	Probability = 0.41181135157812676  , ontime 5164151.0 / Total 12540089
+US	Probability = 0.4410696588373531  , ontime 5869351.0 / Total 13307084
+WN	Probability = 0.5776119990511499  , ontime 8437268.0 / Total 14607155
+XE	Probability = 0.2951230561579453  , ontime 568716.0 / Total 1927047
+YV	Probability = 0.3233476390388091  , ontime 186623.0 / Total 577159
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+ML (1)	0.6203214745583704
+WN	0.5776119990511499
+EA	0.574632073903065
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+B6	0.2489625257206307
+DH	0.24970769926846423
+TZ	0.26900542214584944
+
+
+
+
+TaxiTime
+Longest Taxi Time	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	24.602860715960606
+
+Shortest Taxi Time	
+SKA	0.0
+RCA	0.0
+LBF	0.0
+
+
+Reason
+A most reason to cancel a flight is:  
+carrier	263538
+
+1987-2006 (20 files)
+------
+OnTime
+AA	Probability = 0.41844643959949257  , ontime 5630586.0 / Total 13455930
+AQ	Probability = 0.5785598887502812  , ontime 56582.0 / Total 97798
+AS	Probability = 0.4616698970212205  , ontime 1156430.0 / Total 2504885
+B6	Probability = 0.26677415590385034  , ontime 112015.0 / Total 419887
+CO	Probability = 0.4069734646804161  , ontime 3010049.0 / Total 7396180
+DH	Probability = 0.24970769926846423  , ontime 167226.0 / Total 669687
+DL	Probability = 0.46872146091948136  , ontime 7194671.0 / Total 15349566
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.3220456305681464  , ontime 352192.0 / Total 1093609
+F9	Probability = 0.3334786583221996  , ontime 47424.0 / Total 142210
+FL	Probability = 0.29725864678528713  , ontime 217217.0 / Total 730734
+HA	Probability = 0.524018701191944  , ontime 81596.0 / Total 155712
+HP	Probability = 0.5101229204780107  , ontime 1823894.0 / Total 3575401
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.30958145390148106  , ontime 867598.0 / Total 2802487
+NW	Probability = 0.4033852952861878  , ontime 3752574.0 / Total 9302704
+OH	Probability = 0.3733275005655916  , ontime 372937.0 / Total 998954
+OO	Probability = 0.4598623007232051  , ontime 866496.0 / Total 1884251
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.26900542214584944  , ontime 55417.0 / Total 206007
+UA	Probability = 0.417504220965284  , ontime 5036353.0 / Total 12062999
+US	Probability = 0.44723988253595587  , ontime 5738759.0 / Total 12831501
+WN	Probability = 0.592166568266621  , ontime 7964757.0 / Total 13450197
+XE	Probability = 0.3084880996210646  , ontime 464195.0 / Total 1504742
+YV	Probability = 0.3269467094855622  , ontime 96310.0 / Total 294574
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+ML (1)	0.6203214745583704
+WN	0.592166568266621
+AQ	0.5785598887502812
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+DH	0.24970769926846423
+B6	0.26677415590385034
+TZ	0.26900542214584944
+
+
+
+
+TaxiTime
+Longest Taxi Time	
+CKB	197.85714285714286
+MKK	45.77816291161179
+VLD	28.221441947565545
+Shortest Taxi Time	
+SKA	0.0
+ROW	0.0
+RCA	0.0
+
+
+Reason
+carrier	196759
+
+1987-2005 (19 files)
+------
+OnTime
+AA	Probability = 0.42328835391258735  , ontime 5428318.0 / Total 12824161
+AQ	Probability = 0.6456918522739865  , ontime 40789.0 / Total 63171
+AS	Probability = 0.4754931225573816  , ontime 1116649.0 / Total 2348402
+B6	Probability = 0.2803043422608067  , ontime 74455.0 / Total 265622
+CO	Probability = 0.41174875851576515  , ontime 2919092.0 / Total 7089498
+DH	Probability = 0.24970769926846423  , ontime 167226.0 / Total 669687
+DL	Probability = 0.47337612045875493  , ontime 7030718.0 / Total 14852287
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.33464126508571224  , ontime 277006.0 / Total 827770
+F9	Probability = 0.3214245293696005  , ontime 17040.0 / Total 53014
+FL	Probability = 0.31073633312681753  , ontime 153977.0 / Total 495523
+HA	Probability = 0.5295619418298828  , ontime 54968.0 / Total 103799
+HP	Probability = 0.5101229204780107  , ontime 1823894.0 / Total 3575401
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.3098088302430503  , ontime 704408.0 / Total 2273686
+NW	Probability = 0.40775324355022124  , ontime 3619029.0 / Total 8875537
+OH	Probability = 0.3762142020624445  , ontime 274019.0 / Total 728359
+OO	Probability = 0.5034187248911921  , ontime 679427.0 / Total 1349626
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.2681711511878355  , ontime 50052.0 / Total 186642
+UA	Probability = 0.4226007461174599  , ontime 4891315.0 / Total 11574317
+US	Probability = 0.4524472871448394  , ontime 5580117.0 / Total 12333187
+WN	Probability = 0.6067966230853985  , ontime 7500965.0 / Total 12361580
+XE	Probability = 0.3233135865682305  , ontime 347544.0 / Total 1074944
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+AQ	0.6456918522739865
+ML (1)	0.6203214745583704
+WN	0.6067966230853985
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+DH	0.24970769926846423
+TZ	0.2681711511878355
+B6	0.2803043422608067
+
+TaxiTime
+Longest Taxi Time	
+CKB	212.3846153846154
+MKK	45.77816291161179
+FLO	30.613598946328615
+Shortest Taxi Time	
+SKA	0.0
+ROW	0.0
+LAR	0.0
+
+
+Reason
+carrier	141104
+
+1987-2004 (18 files)
+------
+OnTime
+
+AA	Probability = 0.42780249169939205  , ontime 5202960.0 / Total 12162061
+AQ	Probability = 0.6456918522739865  , ontime 40789.0 / Total 63171
+AS	Probability = 0.4910968459637637  , ontime 1077162.0 / Total 2193380
+B6	Probability = 0.2875940693787732  , ontime 44827.0 / Total 155869
+CO	Probability = 0.41573773038992956  , ontime 2825480.0 / Total 6796304
+DH	Probability = 0.24169108226206218  , ontime 129595.0 / Total 536201
+DL	Probability = 0.47756194716976674  , ontime 6787587.0 / Total 14212998
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.3399305064694459  , ontime 182748.0 / Total 537604
+FL	Probability = 0.318229364306809  , ontime 96441.0 / Total 303055
+HA	Probability = 0.5254906890297556  , ontime 29263.0 / Total 55687
+HP	Probability = 0.5194112560464648  , ontime 1755756.0 / Total 3380281
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.3006426801701309  , ontime 528936.0 / Total 1759351
+NW	Probability = 0.4124344548606851  , ontime 3465603.0 / Total 8402797
+OH	Probability = 0.36862262306314636  , ontime 132344.0 / Total 359023
+OO	Probability = 0.5708806258515027  , ontime 481040.0 / Total 842628
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.2646026730790739  , ontime 37853.0 / Total 143056
+UA	Probability = 0.4274809421739643  , ontime 4743146.0 / Total 11095573
+US	Probability = 0.4581897746075558  , ontime 5460122.0 / Total 11916726
+WN	Probability = 0.6128962539772828  , ontime 6947757.0 / Total 11335943
+XE	Probability = 0.3346839439198318  , ontime 228143.0 / Total 681667
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+AQ	0.6456918522739865
+ML (1)	0.6203214745583704
+WN	0.6128962539772828
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+DH	0.24169108226206218
+TZ	0.2646026730790739
+B6	0.2875940693787732
+
+
+TaxiTime
+Longest Taxi Time	
+CKB	229.66666666666666
+MKK	45.77816291161179
+GNV	29.259280834613143
+Shortest Taxi Time	
+SKA	0.0
+PUB	1.125
+BFF	2.0
+
+Reason
+A most reason to cancel a flight is:  
+carrier	81754
+
+1987-2003 (17 files)
+------
+OnTime
+AA	Probability = 0.43514505131273995  , ontime 4994403.0 / Total 11477559
+AQ	Probability = 0.6456918522739865  , ontime 40789.0 / Total 63171
+AS	Probability = 0.509409003942272  , ontime 1034383.0 / Total 2030555
+B6	Probability = 0.30375232272373076  , ontime 20270.0 / Total 66732
+CO	Probability = 0.420175324284692  , ontime 2730977.0 / Total 6499613
+DH	Probability = 0.25928359701439235  , ontime 72602.0 / Total 280010
+DL	Probability = 0.4818931787891713  , ontime 6523520.0 / Total 13537274
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+EV	Probability = 0.34669740590793224  , ontime 92485.0 / Total 266760
+FL	Probability = 0.3418780677370341  , ontime 48826.0 / Total 142817
+HA	Probability = 0.5677618069815195  , ontime 4424.0 / Total 7792
+HP	Probability = 0.5298264601253553  , ontime 1688949.0 / Total 3187740
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.29995737102805325  , ontime 388413.0 / Total 1294894
+NW	Probability = 0.41671544856186415  , ontime 3293103.0 / Total 7902522
+OO	Probability = 0.6524751001893463  , ontime 254310.0 / Total 389762
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+TZ	Probability = 0.25814106789716545  , ontime 17622.0 / Total 68265
+UA	Probability = 0.4330047597922845  , ontime 4567035.0 / Total 10547309
+US	Probability = 0.4641938049520399  , ontime 5340248.0 / Total 11504350
+WN	Probability = 0.6173078959891857  , ontime 6393719.0 / Total 10357423
+XE	Probability = 0.3633781586929847  , ontime 116680.0 / Total 321098
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+OO	0.6524751001893463
+AQ	0.6456918522739865
+ML (1)	0.6203214745583704
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+TZ	0.25814106789716545
+DH	0.25928359701439235
+MQ	0.29995737102805325
+
+
+
+TaxiTime
+Longest Taxi Time	
+VLD	20.803848750844026
+PHF	18.289991682838924
+JFK	17.031328375157514
+Shortest Taxi Time	
+PUB	0.0
+BFF	2.0
+FMN	2.5
+
+Reason
+A most reason to cancel a flight is:  
+carrier	22402
+
+
+1987-2002 (16 files)
+------
+OnTime
+AA	Probability = 0.44483467349635797  , ontime 4777076.0 / Total 10738992
+AQ	Probability = 0.6456918522739865  , ontime 40789.0 / Total 63171
+AS	Probability = 0.5277195957399892  , ontime 988394.0 / Total 1872953
+CO	Probability = 0.4244625203838207  , ontime 2631570.0 / Total 6199770
+DL	Probability = 0.4857556327394287  , ontime 6258802.0 / Total 12884672
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.5407552273407469  , ontime 1622522.0 / Total 3000474
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.31135055773234305  , ontime 273986.0 / Total 879992
+NW	Probability = 0.42404086880762965  , ontime 3142248.0 / Total 7410248
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+UA	Probability = 0.43794232063496474  , ontime 4383860.0 / Total 10010131
+US	Probability = 0.46986241191160355  , ontime 5215173.0 / Total 11099362
+WN	Probability = 0.6162638339366509  , ontime 5799161.0 / Total 9410192
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+AQ	0.6456918522739865
+ML (1)	0.6203214745583704
+WN	0.6162638339366509
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+MQ	0.31135055773234305
+NW	0.42404086880762965
+CO	0.4244625203838207
+
+
+TaxiTime
+Longest Taxi Time	
+ACY	169.5
+JFK	17.35488640211598
+EWR	16.670023986406115
+Shortest Taxi Time	
+MKK	0.0
+LNY	0.0
+GUM	3.4066666666666667
+
+Reason
+
+
+1987-2001 (15 files)
+------
+OnTime
+
+AA	Probability = 0.4584424986976941  , ontime 4537585.0 / Total 9897828
+AQ	Probability = 0.6456918522739865  , ontime 40789.0 / Total 63171
+AS	Probability = 0.5468768373342834  , ontime 939448.0 / Total 1717842
+CO	Probability = 0.4304189083520454  , ontime 2529290.0 / Total 5876345
+DL	Probability = 0.4908697563912034  , ontime 5971489.0 / Total 12165119
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.5528791543325917  , ontime 1551704.0 / Total 2806588
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+MQ	Probability = 0.316476640957306  , ontime 143450.0 / Total 453272
+NW	Probability = 0.433873133455134  , ontime 2996012.0 / Total 6905272
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.46872027915368625  , ontime 1723941.0 / Total 3677974
+UA	Probability = 0.4433376815157556  , ontime 4179652.0 / Total 9427694
+US	Probability = 0.47779529399349235  , ontime 5061760.0 / Total 10593993
+WN	Probability = 0.6242796049083676  , ontime 5284510.0 / Total 8464973
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+AQ	0.6456918522739865
+WN	0.6242796049083676
+ML (1)	0.6203214745583704
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+MQ	0.316476640957306
+CO	0.4304189083520454
+NW	0.433873133455134
+
+
+
+TaxiTime
+Longest Taxi Time	
+JFK	17.451648725701144
+EWR	16.799488854350237
+LGA	14.692579314997339
+Shortest Taxi Time	
+MKK	0.0
+LNY	0.0
+GUM	3.4066666666666667
+
+Reason
+
+
+1987-2000 (14 files)
+------
+OnTime
+AA	Probability = 0.4683274572057703  , ontime 4315623.0 / Total 9214969
+AQ	Probability = 0.7146276350915953  , ontime 7763.0 / Total 10863
+AS	Probability = 0.5621772300469483  , ontime 881314.0 / Total 1567680
+CO	Probability = 0.43747747669280007  , ontime 2410920.0 / Total 5510958
+DL	Probability = 0.49881591871957137  , ontime 5668797.0 / Total 11364507
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.5634040490333763  , ontime 1466703.0 / Total 2603288
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.44326109303930267  , ontime 2832957.0 / Total 6391170
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.4728737975520448  , ontime 1626422.0 / Total 3439442
+UA	Probability = 0.4506873137462064  , ontime 3947517.0 / Total 8758882
+US	Probability = 0.48763221476780216  , ontime 4845811.0 / Total 9937430
+WN	Probability = 0.6281089046418135  , ontime 4727907.0 / Total 7527209
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+AQ	0.7146276350915953
+WN	0.6281089046418135
+ML (1)	0.6203214745583704
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.43747747669280007
+NW	0.44326109303930267
+UA	0.4506873137462064
+
+
+TaxiTime
+Longest Taxi Time	
+JFK	17.616169119728546
+EWR	16.814609855571952
+LGA	14.507535564452269
+Shortest Taxi Time	
+MKK	0.0
+LNY	0.0
+GGG	0.0
+
+
+Reason
+
+
+1987-1999 (13 files)
+------
+OnTime
+AA	Probability = 0.47844409171075836  , ontime 4069167.0 / Total 8505000
+AS	Probability = 0.5770265327368391  , ontime 820324.0 / Total 1421640
+CO	Probability = 0.44514998943633327  , ontime 2281866.0 / Total 5126061
+DL	Probability = 0.5066375174024272  , ontime 5314585.0 / Total 10489916
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.5777093145906655  , ontime 1382935.0 / Total 2393825
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.4535737336552482  , ontime 2656409.0 / Total 5856620
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.47693497073587143  , ontime 1515758.0 / Total 3178123
+UA	Probability = 0.4611150209449453  , ontime 3701919.0 / Total 8028190
+US	Probability = 0.49753262472651155  , ontime 4586908.0 / Total 9219311
+WN	Probability = 0.6414540665992697  , ontime 4250537.0 / Total 6626409
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6414540665992697
+ML (1)	0.6203214745583704
+HP	0.5777093145906655
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.44514998943633327
+NW	0.4535737336552482
+UA	0.4611150209449453
+
+
+
+TaxiTime
+Longest Taxi Time	
+JFK	17.348365871925527
+EWR	16.649576892662143
+DFW	14.05426914979551
+Shortest Taxi Time	
+MKK	0.0
+LNY	0.0
+GGG	0.0
+
+
+Reason
+A most reason to cancel a flight is:  
+	1036421
+
+1987-1998 (12 files)
+------
+OnTime
+AA	Probability = 0.48770313261171583  , ontime 3825340.0 / Total 7843583
+AS	Probability = 0.5910656380434347  , ontime 751524.0 / Total 1271473
+CO	Probability = 0.4519244759621852  , ontime 2140040.0 / Total 4735393
+DL	Probability = 0.5140222646932037  , ontime 4934220.0 / Total 9599234
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.5904369701926497  , ontime 1292956.0 / Total 2189829
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.4648771610896249  , ontime 2479493.0 / Total 5333652
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.4812117160429124  , ontime 1399304.0 / Total 2907876
+UA	Probability = 0.46474055664639086  , ontime 3384659.0 / Total 7282900
+US	Probability = 0.5064394705460841  , ontime 4324633.0 / Total 8539289
+WN	Probability = 0.6508661244640122  , ontime 3763209.0 / Total 5781848
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6508661244640122
+ML (1)	0.6203214745583704
+AS	0.5910656380434347
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4519244759621852
+UA	0.46474055664639086
+NW	0.4648771610896249
+
+TaxiTime
+Longest Taxi Time	
+JFK	17.14430383412487
+EWR	16.232759142955228
+DFW	14.06996054027045
+Shortest Taxi Time	
+MKK	0.0
+LNY	0.0
+GGG	0.0
+
+Reason
+A most reason to cancel a flight is:  
+	882110
+
+
+1987-1997 (11 files)
+------
+OnTime
+AA	Probability = 0.4974218760516105  , ontime 3584526.0 / Total 7206209
+AS	Probability = 0.6017156699098098  , ontime 675903.0 / Total 1123293
+CO	Probability = 0.4589079972968544  , ontime 1993757.0 / Total 4344568
+DL	Probability = 0.5210024215996346  , ontime 4534245.0 / Total 8702925
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6043412113817465  , ontime 1203612.0 / Total 1991610
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.47820940594865463  , ontime 2320218.0 / Total 4851887
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.48576657839797244  , ontime 1282996.0 / Total 2641178
+UA	Probability = 0.4670868033346175  , ontime 3062648.0 / Total 6556914
+US	Probability = 0.5117174671599302  , ontime 4023222.0 / Total 7862194
+WN	Probability = 0.6574036495669896  , ontime 3272061.0 / Total 4977248
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6574036495669896
+ML (1)	0.6203214745583704
+HP	0.6043412113817465
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4589079972968544
+UA	0.4670868033346175
+NW	0.47820940594865463
+
+TaxiTime
+Longest Taxi Time	
+JFK	16.888491810089477
+EWR	15.672909418236278
+DFW	14.218731745521676
+Shortest Taxi Time	
+ABI	0.0
+GUM	3.4066666666666667
+KSM	3.802030456852792
+
+Reason
+A most reason to cancel a flight is:  
+	737601
+
+1987-1996 (10 files)
+------
+OnTime
+AA	Probability = 0.509308211739439  , ontime 3339920.0 / Total 6557758
+AS	Probability = 0.6112269721858525  , ontime 598478.0 / Total 979142
+CO	Probability = 0.4621180352975496  , ontime 1824930.0 / Total 3949056
+DL	Probability = 0.5294597954741843  , ontime 4127919.0 / Total 7796473
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6118487602182807  , ontime 1094193.0 / Total 1788339
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.4875570342534648  , ontime 2110944.0 / Total 4329635
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.48675874615393366  , ontime 1155336.0 / Total 2373529
+UA	Probability = 0.46706772373704664  , ontime 2723747.0 / Total 5831589
+US	Probability = 0.5137797558257053  , ontime 3677468.0 / Total 7157674
+WN	Probability = 0.6611175930731306  , ontime 2771955.0 / Total 4192832
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6611175930731306
+ML (1)	0.6203214745583704
+HP	0.6118487602182807
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4621180352975496
+UA	0.46706772373704664
+TW	0.48675874615393366
+
+
+
+TaxiTime
+Longest Taxi Time	
+JFK	16.914142785124287
+EWR	15.301810349922189
+DFW	14.222427159701798
+Shortest Taxi Time	
+ABI	0.0
+GUM	3.4295302013422817
+KSM	3.802030456852792
+
+
+Reason
+A most reason to cancel a flight is:  
+	639838
+
+1987-1995 (9 files)
+------
+OnTime
+AA	Probability = 0.5201747734743307  , ontime 3078902.0 / Total 5918976
+AS	Probability = 0.6324619679477776  , ontime 530363.0 / Total 838569
+CO	Probability = 0.46297863770863695  , ontime 1641469.0 / Total 3545453
+DL	Probability = 0.541203731639104  , ontime 3749112.0 / Total 6927358
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6253884801756436  , ontime 994676.0 / Total 1590493
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.49654506416909866  , ontime 1890140.0 / Total 3806583
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.49582412253804353  , ontime 1042971.0 / Total 2103510
+UA	Probability = 0.4717997813686634  , ontime 2414768.0 / Total 5118205
+US	Probability = 0.5187125779829611  , ontime 3346344.0 / Total 6451249
+WN	Probability = 0.6660922350169239  , ontime 2295557.0 / Total 3446305
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6660922350169239
+AS	0.6324619679477776
+HP	0.6253884801756436
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.46297863770863695
+UA	0.4717997813686634
+PI	0.49232958598205306
+
+
+
+TaxiTime
+
+Longest Taxi Time	
+JFK	16.125534471373985
+EWR	14.660862740803607
+DFW	14.176996975494419
+Shortest Taxi Time	
+GUM	3.4761904761904763
+KSM	3.9849624060150375
+DUT	4.191292875989446
+
+
+Reason
+A most reason to cancel a flight is:  
+	511302
+
+1987-1994 (8 files)
+------
+OnTime
+AA	Probability = 0.5276345337983002  , ontime 2766591.0 / Total 5243385
+AS	Probability = 0.6441454012786858  , ontime 454690.0 / Total 705881
+CO	Probability = 0.4619109601200238  , ontime 1441492.0 / Total 3120714
+DL	Probability = 0.5519441761891561  , ontime 3342920.0 / Total 6056627
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6324174171062346  , ontime 884936.0 / Total 1399291
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.5019030065290537  , ontime 1655905.0 / Total 3299253
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.5020281967220249  , ontime 922771.0 / Total 1838086
+UA	Probability = 0.47718611728329946  , ontime 2103539.0 / Total 4408215
+US	Probability = 0.5194421016412633  , ontime 2954395.0 / Total 5687631
+WN	Probability = 0.6716855258490252  , ontime 1855585.0 / Total 2762580
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6716855258490252
+AS	0.6441454012786858
+HP	0.6324174171062346
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4619109601200238
+UA	0.47718611728329946
+PI	0.49232958598205306
+
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+NA	419397
+
+1987-1993 (7 files)
+------
+OnTime
+AA	Probability = 0.5293498533594253  , ontime 2398562.0 / Total 4531147
+AS	Probability = 0.6458521614541385  , ontime 380901.0 / Total 589765
+CO	Probability = 0.4613070866498958  , ontime 1220184.0 / Total 2645058
+DL	Probability = 0.5548353827448905  , ontime 2881370.0 / Total 5193198
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6358175130624028  , ontime 777711.0 / Total 1223167
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.5038869913843612  , ontime 1422476.0 / Total 2823006
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.5006134651820641  , ontime 793193.0 / Total 1584442
+UA	Probability = 0.4751085444393783  , ontime 1795372.0 / Total 3778867
+US	Probability = 0.5235862989567747  , ontime 2540125.0 / Total 4851397
+WN	Probability = 0.669162257647879  , ontime 1472434.0 / Total 2200414
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.669162257647879
+AS	0.6458521614541385
+HP	0.6358175130624028
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4613070866498958
+UA	0.4751085444393783
+PI	0.49232958598205306
+
+
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+NA	352657
+
+1987-1992 (6 files)
+------
+OnTime
+AA	Probability = 0.526549214542023  , ontime 1977464.0 / Total 3755516
+AS	Probability = 0.6414621465071125  , ontime 315838.0 / Total 492372
+CO	Probability = 0.4679006316921285  , ontime 1044401.0 / Total 2232100
+DL	Probability = 0.5634005736906206  , ontime 2424911.0 / Total 4304062
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.635801355737453  , ontime 666220.0 / Total 1047843
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.5003778160661562  , ontime 1179374.0 / Total 2356967
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.4960299033484249  , ontime 666563.0 / Total 1343796
+UA	Probability = 0.4737433471695636  , ontime 1486672.0 / Total 3138138
+US	Probability = 0.5228288968633831  , ontime 2109223.0 / Total 4034251
+WN	Probability = 0.6562751990708375  , ontime 1125573.0 / Total 1715093
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6562751990708375
+AS	0.6414621465071125
+HP	0.635801355737453
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4679006316921285
+UA	0.4737433471695636
+PI	0.49232958598205306
+
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+NA	292812
+
+
+1987-1991 (5 files)
+------
+OnTime
+
+AA	Probability = 0.5226861703376973  , ontime 1557794.0 / Total 2980362
+AS	Probability = 0.6309355420179439  , ontime 247116.0 / Total 391666
+CO	Probability = 0.4695564924709013  , ontime 852662.0 / Total 1815888
+DL	Probability = 0.5724594358510092  , ontime 1943778.0 / Total 3395486
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6323509344826937  , ontime 537559.0 / Total 850096
+ML (1)	Probability = 0.6203214745583704  , ontime 42876.0 / Total 69119
+NW	Probability = 0.49332065720832724  , ontime 930902.0 / Total 1887012
+PA (1)	Probability = 0.493985923271555  , ontime 153845.0 / Total 311436
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.49616062934603944  , ontime 546060.0 / Total 1100571
+UA	Probability = 0.46553701596008684  , ontime 1167774.0 / Total 2508445
+US	Probability = 0.5234536201229946  , ontime 1658612.0 / Total 3168594
+WN	Probability = 0.6358805978914767  , ontime 822881.0 / Total 1294081
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6358805978914767
+HP	0.6323509344826937
+AS	0.6309355420179439
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+UA	0.46553701596008684
+CO	0.4695564924709013
+PI	0.49232958598205306
+
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+NA	239976
+
+1987-1990 (4 files)
+------
+OnTime
+AA	Probability = 0.5196661123679341  , ontime 1175650.0 / Total 2262318
+AS	Probability = 0.6155041501042201  , ontime 181013.0 / Total 294089
+CO	Probability = 0.4644588901478743  , ontime 648471.0 / Total 1396186
+DL	Probability = 0.5816270264454494  , ontime 1470395.0 / Total 2528072
+EA	Probability = 0.574632073903065  , ontime 508019.0 / Total 884077
+HP	Probability = 0.6404425497489248  , ontime 405322.0 / Total 632878
+NW	Probability = 0.501946678484205  , ontime 718106.0 / Total 1430642
+PA (1)	Probability = 0.5071613348453725  , ontime 125669.0 / Total 247789
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.4991232774981434  , ontime 435519.0 / Total 872568
+UA	Probability = 0.46208758629452373  , ontime 872828.0 / Total 1888880
+US	Probability = 0.5095090098920487  , ontime 1156588.0 / Total 2270005
+WN	Probability = 0.6292770874125196  , ontime 584280.0 / Total 928494
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+HP	0.6404425497489248
+WN	0.6292770874125196
+AS	0.6155041501042201
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+UA	0.46208758629452373
+CO	0.4644588901478743
+PI	0.49232958598205306
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+NA	196471
+
+
+
+1987-1989 (3 files)
+------
+OnTime
+AA	Probability = 0.5306267034514949  , ontime 827619.0 / Total 1559701
+AS	Probability = 0.608294954198087  , ontime 120193.0 / Total 197590
+CO	Probability = 0.4514151132018788  , ontime 440262.0 / Total 975293
+DL	Probability = 0.5959204882134513  , ontime 1019555.0 / Total 1710891
+EA	Probability = 0.5779469353632244  , ontime 367780.0 / Total 636356
+HP	Probability = 0.6499384846928415  , ontime 272061.0 / Total 418595
+NW	Probability = 0.5254977183742892  , ontime 512571.0 / Total 975401
+PA (1)	Probability = 0.5272207168333324  , ontime 87361.0 / Total 165701
+PI	Probability = 0.49232958598205306  , ontime 424491.0 / Total 862209
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.5014294106128843  , ontime 307296.0 / Total 612840
+UA	Probability = 0.4547214949162538  , ontime 587527.0 / Total 1292059
+US	Probability = 0.48219762989061515  , ontime 617510.0 / Total 1280616
+WN	Probability = 0.6386106883778108  , ontime 388578.0 / Total 608474
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+HP	0.6499384846928415
+WN	0.6386106883778108
+AS	0.608294954198087
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4514151132018788
+UA	0.4547214949162538
+US	0.48219762989061515
+
+
+
+TaxiTime
+
+Longest Taxi Time	
+JFK	20.874649905135584
+LGA	18.619557123260826
+EWR	18.39929031158092
+Shortest Taxi Time	
+AKN	3.75
+BRW	4.59447983014862
+OME	4.7648809523809526
+
+
+Reason
+A most reason to cancel a flight is:  
+	144013
+
+
+1987-1988 (2 files)
+------
+OnTime
+
+AA	Probability = 0.5452470112341551  , ontime 462876.0 / Total 848929
+AS	Probability = 0.5986615991707734  , ontime 65842.0 / Total 109982
+CO	Probability = 0.44522044383346426  , ontime 253911.0 / Total 570304
+DL	Probability = 0.603809043933189  , ontime 563221.0 / Total 932780
+EA	Probability = 0.5832509026163509  , ontime 283026.0 / Total 485256
+HP	Probability = 0.6583915133639567  , ontime 147774.0 / Total 224447
+NW	Probability = 0.5407555984934825  , ontime 286581.0 / Total 529964
+PA (1)	Probability = 0.5620863572048017  , ontime 49259.0 / Total 87636
+PI	Probability = 0.5233343213212385  , ontime 303693.0 / Total 580304
+PS	Probability = 0.5440559950421057  , ontime 44772.0 / Total 82293
+TW	Probability = 0.5053781754433361  , ontime 172103.0 / Total 340543
+UA	Probability = 0.4778200149088378  , ontime 348057.0 / Total 728427
+US	Probability = 0.5059526363391416  , ontime 294810.0 / Total 582683
+WN	Probability = 0.6584562873322473  , ontime 212204.0 / Total 322275
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6584562873322473
+HP	0.6583915133639567
+DL	0.603809043933189
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.44522044383346426
+UA	0.4778200149088378
+TW	0.5053781754433361
+
+
+
+TaxiTime
+
+
+
+
+Reason
+A most reason to cancel a flight is:  
+	69848
+
+1987 (1 files)
+------
+OnTime
+
+AA	Probability = 0.5335928515641816  , ontime 86767.0 / Total 162609
+AS	Probability = 0.5380540182583605  , ontime 11375.0 / Total 21141
+CO	Probability = 0.4535748220507093  , ontime 54419.0 / Total 119978
+DL	Probability = 0.5041303862469301  , ontime 92578.0 / Total 183639
+EA	Probability = 0.596548065628434  , ontime 62974.0 / Total 105564
+HP	Probability = 0.5746856925928407  , ontime 25735.0 / Total 44781
+NW	Probability = 0.5160527109569414  , ontime 54747.0 / Total 106088
+PA (1)	Probability = 0.5779993955877909  , ontime 9563.0 / Total 16545
+PI	Probability = 0.49432716532012855  , ontime 56902.0 / Total 115110
+PS	Probability = 0.4856062094714089  , ontime 19770.0 / Total 40712
+TW	Probability = 0.5053175103783134  , ontime 34448.0 / Total 68171
+UA	Probability = 0.474362163434065  , ontime 70559.0 / Total 148745
+US	Probability = 0.5108893598440878  , ontime 47972.0 / Total 93899
+WN	Probability = 0.6164906103286385  , ontime 37818.0 / Total 61344
+ 	
+The 3 Airlines with the Highest Probability of being on time are:	
+WN	0.6164906103286385
+EA	0.596548065628434
+PA (1)	0.5779993955877909
+ 	
+The 3 Airlines with the Lowest Probability of being on time are:	
+CO	0.4535748220507093
+UA	0.474362163434065
+PS	0.4856062094714089
+
+
+TaxiTime
+
+
+
+
+Reason
+
+A most reason to cancel a flight is:  
+NA	19685
+

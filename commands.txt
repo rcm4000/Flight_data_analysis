@@ -1,0 +1,119 @@
+Installing Oozie on Top of Hadoop:
+ ----------------------------------
+Oozie 4.2.0 and Hadoop 2.7.3 and Java 1.8
+
+ssh NameNode
+
+
+Java Location
+/usr/java/jdk1.8.0_141/jre/bin/java
+java: /usr/bin/java 
+      /usr/lib/java 
+      /etc/java 
+      /usr/share/java 
+      /usr/share/man/man1/java.1
+
+
+Step1:  build the binary distribution by installing Maven
+•	Download from https://maven.apache.org/download.cgi and untar 
+             Move to a directory <MAVENHOME>
+  
+$ wget http://apache.mirrors.pair.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+
+$ sudo tar zxvf apache-maven-3.6.3-bin.tar.gz
+
+$ mv apache-maven-3.6.3 MAVENHOME
+             
+               on Linux  $- sudo vi ~/.bashrc
+              $ nano ~/.bashrc
+
+•	Add to bash_profile
+                  export PATH=$PATH:’MAVENHOME/bin'
+
+Step2:   Download Oozie
+Download and untar Oozie 4.2.0 source code from the Oozie mirror and
+store the untarred folder in a convenient location
+http://www.apache.org/dyn/closer.lua/oozie/
+
+  $ wget http://apache.mirrors.pair.com/oozie/4.2.0/oozie-4.2.0.tar.gz
+  
+  $ sudo tar zxvf oozie-4.2.0.tar.gz
+  $ mv oozie-4.2.0 OOZIE 
+In Oozie home directory. oozie-5.2.0 edit pom.xml 
+
+1) change java version to 1.8
+2) add to configuration element for maven-javadoc-plugin
+
+<javadocExecutable><JAVADOC EXECUTABLE HOME></javadocExecutable>
+<additionalparam>-Xdoclint:none</additionalparam>
+
+3) Change hadoop.version and hadoop.majorversion
+hadoop.version = 2.7.2
+
+5)  update the repository below
+
+ <repository>
+            <id>Codehaus repository</id>
+            <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+          In OOZIE/hadooplibs
+in pom.xml change hadoop-2 to true 
+
+
+Back to Terminal 
+$ cd OOZIE/bin
+$ ./mkdistro.sh -DskipTests
+
+Find the distribution in 
+OOZIE/distro/target
+
+       sudo chmod -R 777 OOZIE
+
+Untar the distribution and move it to a preferred location
+                 
+
+Copy Hadoop Jars to Oozie and configure Hadoop and Oozie
+
+Setup: war, sharelib and metadata db
+sudo apt-get install.zip
+
+/bin/oozie-setup.sh prepare-war
+
+----------------------------
+
+Update hadoop files with private keys for master and data nodes
+
+--------------------------
+Before Running Oozie 
+---------------------------
+In order to run process we need to copy or input files to the HDFS file system.  We made a directory called user/hadoop/airline/input
+
+hadoop fs -mkdir airline/input
+
+Copy as I need them input files to HDFS
+hadoop fs -copyFromLocal 1998.csv airline/input
+
+
+Check files are in HDFS - 
+
+hadoop fs -ls /user/hadoop/airline/input
+
+
+Start and run a workflow
+----------------------------
+Move Have files to lib folder in workflow
+Move job.properties to workflow folder
+Move workflow.xml to workflow folder
+
+cd /hadoop/cs644/airline/workflow
+
+oozie job -oozie http://localhost:11000/oozie -config job.properties -run
+
+
+See OOZIE Jobs on Server:
+http://ec2-34-223-42-226.us-west-2.compute.amazonaws.com:11000/oozie/
+
